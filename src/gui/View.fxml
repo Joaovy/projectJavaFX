@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="342.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+<AnchorPane prefHeight="342.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="138.0" text="Calculo de soma">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txtNumber1" layoutX="14.0" layoutY="47.0" prefHeight="24.0" prefWidth="252.0" promptText="Primeiro numero" />
-      <TextField fx:id="txtNumber2" layoutX="14.0" layoutY="83.0" prefHeight="24.0" prefWidth="252.0" promptText="Segundo numero" />
-      <Button fx:id="btSum" layoutX="14.0" layoutY="115.0" mnemonicParsing="false" onAction="#onBtSumAction" prefHeight="13.0" prefWidth="56.0" text="Soma">
+      <ComboBox fx:id="personComboBox" layoutX="17.0" layoutY="14.0" onAction="#onComboBoxPersonAction" prefHeight="24.0" prefWidth="199.0" promptText="Selecione uma pessoa" />
+      <Button fx:id="btAll" layoutX="233.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBtAllAction" prefHeight="24.0" prefWidth="76.0" text="All">
          <font>
             <Font size="11.0" />
          </font>
       </Button>
-      <Label layoutX="16.0" layoutY="163.0" text="Resultado = " />
-      <Label fx:id="labelResult" layoutX="104.0" layoutY="163.0" />
    </children>
 
 </AnchorPane>
