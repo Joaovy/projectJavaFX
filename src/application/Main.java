@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/sample.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/View.fxml"));
             Parent parent = loader.load(); // Aqui você carrega o FXML
             Scene scene = new Scene(parent);
             stage.setScene(scene);
